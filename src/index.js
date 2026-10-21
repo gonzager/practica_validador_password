@@ -1,8 +1,8 @@
 const express = require('express')
 const app = express()
 const PORT = process.env.PORT || 3000
-const usuarios = require('../datos/usuarios.json')
-const {validarReglas, reglasNoCumplen} = require('./politicas/rules') 
+const usuarios = require('./data/usuarios.json')
+const {validarReglas, reglasNoCumplen} = require('./politica/reglas') 
 
 app.use(express.json())
 
